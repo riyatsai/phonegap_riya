@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>cameraPreviewSample</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrapV3.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <div class="aim"><label>+</label></div>
+    <div class="main">
+      <header><label class="headerLeft"><a onclick="switchView('index')">< 首頁</a></label><label style="margin-left:-73px; color:#000;">擷取資料</label></header>
+      <article>
+        <!-- <div>Location:<span id="GPSlocation"></span></div> -->
+      <section class="flex">
+          <ul>
+            <li>Orientation</li>
+            <li>alpha:<span id="alpha"></span></li>
+            <li>beta:<span id="beta"></span></li>
+            <li>gamma:<span id="gamma"></span></li>
+          </ul>
+          <ul>
+            <li>Acceleration</li>
+            <li>X:<span id="x2"></span></li>
+            <li>Y:<span id="y2"></span></li>
+            <li>Z:<span id="z2"></span></li>
+          </ul>
+          <ul>
+            <li>Acceleration(G)</li>
+            <li>X:<span id="x"></span></li>
+            <li>Y:<span id="y"></span></li>
+            <li>Z:<span id="z"></span></li>
+          </ul>
+        </section>
+        <div id="time"></div>
+        </br></br>
+        <!-- <div id="hahaha"></div> -->
+        <!-- <button class="btn btn-warning" onclick="gyro.start()">start</button>
+        <button class="btn btn-warning" onclick="gyro.stop()">stop</button> -->
+      </article>
+      <footer>
+        <a class="pictures" href="file.html"><img id="originalPicture" height="70px" /></a>
+        <button class="btn btn-g" style="margin-top:29px; margin-left:-70px" id="takePictureButton">take picture</button>
+        <!-- <img style="margin-top:24px;" src="img/omanyte.gif" id="takePictureButton" /> -->
+      </footer>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/math.min.js"></script>
+    <script type="text/javascript" src="js/display.js"></script>
+    <script type="text/javascript" src="js/file.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="CameraPreview.js"></script>
+    <script type="text/javascript" src="js/gyroscope.js"></script>
+  </body>
+</html>

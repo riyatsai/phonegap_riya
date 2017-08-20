@@ -1,0 +1,288 @@
+body, html{
+  height:100%;
+  width:100%;
+}
+body{
+  color:#333;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: transparent;
+}
+canvas{
+  display:block;
+  width:90%;
+  height:253px;
+  margin:25.5px auto;
+  border:#4286f4 1px dashed;
+}
+.pictures{
+  float: left;
+  height:70px;
+  width:39.35px;
+  background:#000;
+  margin-left: 30px;
+  margin-top: 11px;
+}
+textarea {
+	width: 100%;
+	height: 80vh;
+}
+header{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100vw;
+  height:65px;
+  font-size: 18px;
+  line-height: 80px;
+  color:#4286f4;
+  background:#fff;
+}
+header label{
+  font-weight: 300;
+}
+.headerLeft{
+  float:left;
+  height:100%;
+  margin-bottom:0;
+  padding-left: 25px;
+}
+a,a:hover,a:active{
+  color:#4286f4;
+  text-decoration: none;
+}
+article{
+  width:100vw;
+  height:510px;
+  text-align: left;
+  color:#00ff00;
+}
+.indexCenter{
+  height:100%;
+  width:100%;
+  float:left;
+}
+.indexCenter button{
+  display: block;
+  margin-top: 20px;
+}
+footer{
+  width:100vw;
+  height:92px;
+  line-height: 92px;
+  background:#333;
+}
+.flex{
+  display:flex;
+}
+ul{
+  padding: 0;
+  margin-left:25px;
+}
+ul li{
+  list-style: none;
+  color:#a276cd;
+}
+ul li:first-child{
+  color:#cbb279;
+}
+li span{
+  color:#0000ff;
+}
+.main{
+  width:100vw;
+  height:100vh;
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 3;
+}
+
+.aim{
+  color:#00ff00;
+  font-size: 60px;
+  width:100vw;
+  height:100vh;
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.aim label{
+  width:60px;
+  height:72px;/*字不是在正中央所以有些微調*/
+  font-weight: 100;
+  line-height: 60px;
+  margin:0;
+  padding:0;
+  border:0;
+  position: absolute;
+  left:157.5px;
+  top:297.5px;
+  z-index:3;
+}
+.domBlock{
+  float:left;
+  width:100vw;
+  height:291px;/*301px;*/
+  padding:30px 0 0 0;
+  border-top:#4286f4 1px dashed;
+  background:#fafafa;
+}
+.domBlock img{
+  width:45vw;
+  float:left;
+  margin-top:5px;
+  margin-left:10px;
+}
+.domBlock ul{
+  float:left;
+  font-size:12px;
+  margin-left: 5px;
+  margin-top:5px;
+  width: 23vw;
+}
+.domBlock ul li span{
+  color:#5386e1;
+}
+.domBlock center{
+  float:left;
+  width:23vw;
+  margin-top: 25px;
+  padding-left: 16vw;
+}
+.btn-g {
+  color: #FFFFFF;
+  background-color: #24936E;
+  border-color: #249347;
+}
+
+.btn-g:hover,
+.btn-g:focus,
+.btn-g:active,
+.btn-g.active,
+.open .dropdown-toggle.btn-g {
+  color: #FFFFFF;
+  background-color: #249380;
+  border-color: #249347;
+}
+
+.btn-g:active,
+.btn-g.active,
+.open .dropdown-toggle.btn-g {
+  background-image: none;
+}
+
+.btn-g.disabled,
+.btn-g[disabled],
+fieldset[disabled] .btn-g,
+.btn-g.disabled:hover,
+.btn-g[disabled]:hover,
+fieldset[disabled] .btn-g:hover,
+.btn-g.disabled:focus,
+.btn-g[disabled]:focus,
+fieldset[disabled] .btn-g:focus,
+.btn-g.disabled:active,
+.btn-g[disabled]:active,
+fieldset[disabled] .btn-g:active,
+.btn-g.disabled.active,
+.btn-g[disabled].active,
+fieldset[disabled] .btn-g.active {
+  background-color: #24936E;
+  border-color: #249347;
+}
+.btn-g .badge {
+  color: #24936E;
+  background-color: #FFFFFF;
+}
+.btn-p {
+  color: #ffffff;
+  background-color: #611BBD;
+  border-color: #130269;
+}
+.btn-p:hover,
+.btn-p:focus,
+.btn-p:active,
+.btn-p.active,
+.open .dropdown-toggle.btn-p {
+  color: #ffffff;
+  background-color: #49247A;
+  border-color: #130269;
+}
+.btn-p:active,
+.btn-p.active,
+.open .dropdown-toggle.btn-p {
+  background-image: none;
+}
+.btn-p.disabled,
+.btn-p[disabled],
+fieldset[disabled] .btn-p,
+.btn-p.disabled:hover,
+.btn-p[disabled]:hover,
+fieldset[disabled] .btn-p:hover,
+.btn-p.disabled:focus,
+.btn-p[disabled]:focus,
+fieldset[disabled] .btn-p:focus,
+.btn-p.disabled:active,
+.btn-p[disabled]:active,
+fieldset[disabled] .btn-p:active,
+.btn-p.disabled.active,
+.btn-p[disabled].active,
+fieldset[disabled] .btn-p.active {
+  background-color: #611BBD;
+  border-color: #130269;
+}
+
+.btn-p .badge {
+  color: #611BBD;
+  background-color: #ffffff;
+}
+.btn-b {
+  color: #ffffff;
+  background-color: #1B3BBD;
+  border-color: #021C69;
+}
+
+.btn-b:hover,
+.btn-b:focus,
+.btn-b:active,
+.btn-b.active,
+.open .dropdown-toggle.btn-b {
+  color: #ffffff;
+  background-color: #242F7A;
+  border-color: #021C69;
+}
+
+.btn-b:active,
+.btn-b.active,
+.open .dropdown-toggle.btn-b {
+  background-image: none;
+}
+
+.btn-b.disabled,
+.btn-b[disabled],
+fieldset[disabled] .btn-b,
+.btn-b.disabled:hover,
+.btn-b[disabled]:hover,
+fieldset[disabled] .btn-b:hover,
+.btn-b.disabled:focus,
+.btn-b[disabled]:focus,
+fieldset[disabled] .btn-b:focus,
+.btn-b.disabled:active,
+.btn-b[disabled]:active,
+fieldset[disabled] .btn-b:active,
+.btn-b.disabled.active,
+.btn-b[disabled].active,
+fieldset[disabled] .btn-b.active {
+  background-color: #1B3BBD;
+  border-color: #021C69;
+}
+
+.btn-b .badge {
+  color: #1B3BBD;
+  background-color: #ffffff;
+}

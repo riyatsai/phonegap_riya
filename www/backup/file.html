@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>cameraPreviewSample</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrapV3.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <header><label class="headerLeft"><a onclick="switchView('index')">< 首頁</a></label><label style="color:#000;">檢視資料</label><button class="btn btn-b" style="float:right; margin-top:22px; margin-right:25px;" onclick="fileUpload()">上傳</button></header>
+    <article id="fileList" style="background:#fafafa; color:#000; height:602px; overflow-y:auto;">
+      <!-- <textarea id="textArea"></textarea> -->
+    </article>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/math.min.js"></script>
+    <script type="text/javascript" src="js/display.js"></script>
+    <script type="text/javascript" src="js/file.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="CameraPreview.js"></script>
+    <script>
+      function DOMfileBlock(data,index){
+        return '<div class="domBlock">'+
+                  DOMfileImg(data.img)+
+                  DOMfileData(data)+
+                  DOMfileProcess(index)+
+               '</div>';
+      }
+      function DOMfileImg(path){
+        return '<img src="data:image/jpeg;base64,'+path+'"/>';
+      }
+      function DOMfileData(data){
+        return    '<ul>'+
+                    '<li>Acceleration</li>'+
+                    '<li>X:<span>'+data.x+'</span></li>'+
+                    '<li>Y:<span>'+data.y+'</span></li>'+
+                    '<li>Z:<span>'+data.z+'</span></li>'+
+                  '</ul>'+
+                  '<ul>'+
+                    '<li>Acceleration(G)</li>'+
+                    '<li>X:<span>'+data.xG+'</span></li>'+
+                    '<li>Y:<span>'+data.yG+'</span></li>'+
+                    '<li>Z:<span>'+data.zG+'</span></li>'+
+                  '</ul>'+
+                  '<ul>'+
+                    '<li>Orientation</li>'+
+                    '<li>alpha:<span>'+data.a+'</span></li>'+
+                    '<li>beta:<span>'+data.b+'</span></li>'+
+                    '<li>gamma:<span>'+data.g+'</span></li>'+
+                  '</ul>'+
+                  '<ul>'+
+                    '<li>Coordinate</li>'+
+                    '<li>X:<span>'+data.real.cx+'</span></li>'+
+                    '<li>Y:<span>'+data.real.cy+'</span></li>'+
+                    '<li>dis:<span>'+data.real.distance+'</span></li>'+
+                  '</ul>';
+      }
+      function DOMfileProcess(index){
+        return '<center><button class="btn btn-danger" onclick="fileRemove('+index+')">刪除</button></center>';
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera-preview": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-library-helper": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.cordovaplugincamerapreview.sampleapp"
+        }
+    }
+}

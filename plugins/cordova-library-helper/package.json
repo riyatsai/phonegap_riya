@@ -1,0 +1,57 @@
+{
+  "_from": "cordova-library-helper",
+  "_id": "cordova-library-helper@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-/AenGfHwhB0ygqnsokjGjkuNnHM=",
+  "_location": "/cordova-library-helper",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-library-helper",
+    "name": "cordova-library-helper",
+    "escapedName": "cordova-library-helper",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-library-helper/-/cordova-library-helper-1.0.4.tgz",
+  "_shasum": "fc07a719f1f0841d3282a9eca248c68e4b8d9c73",
+  "_spec": "cordova-library-helper",
+  "_where": "/Users/Apple/reactnative/phonegap/cameraPreviewSample/node_modules",
+  "author": {
+    "name": "Cory Thompson"
+  },
+  "bugs": {
+    "url": "https://github.com/coryjthompson/cordova-library-helper/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-library-helper",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Library Helper is a cordova plugin to help insert videos or images into the native gallery. Supports IOS and Android",
+  "homepage": "https://github.com/coryjthompson/cordova-library-helper#readme",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "library helper",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-library-helper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coryjthompson/cordova-library-helper.git"
+  },
+  "version": "1.0.4"
+}
